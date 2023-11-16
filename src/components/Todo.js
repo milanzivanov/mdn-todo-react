@@ -17,7 +17,7 @@ export default function Todo({
   deleteTask,
   editTask
 }) {
-  // console.log(props.name);
+  // console.log(name);
 
   const [isEditing, setEditing] = useState(false);
   const [newName, setNewName] = useState("");

@@ -4,7 +4,9 @@ function Form({ addTask }) {
   const [name, setName] = useState("");
 
   function onHandleSubmit(e) {
+    //
     e.preventDefault();
+    if (name === "") return;
     addTask(name);
     setName("");
   }
